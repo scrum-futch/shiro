@@ -24,6 +24,7 @@ import org.apache.shiro.lang.codec.Hex;
 
 import java.io.File;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
@@ -45,7 +46,7 @@ import java.util.Arrays;
  * @since 1.0
  */
 @SuppressWarnings("checkstyle:BooleanExpressionComplexity")
-public class SimpleByteSource implements ByteSource {
+public class SimpleByteSource implements ByteSource, Serializable {
 
     private final byte[] bytes;
     private String cachedHex;
